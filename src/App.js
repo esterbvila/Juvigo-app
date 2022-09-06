@@ -24,29 +24,26 @@ class App extends React.Component {
 				this.setState({
           items:Object.entries(json.data).join(' ; ').replace(/,/g, " : ").replace(/_/g, " "),
 					DataisLoaded: true
-				})
-        ;
+				});
 			})
 	}
 
 	render() {
 		const { DataisLoaded, items } = this.state;
-    
+		console.log({ items })
+		
 		if (!DataisLoaded) return <div>
 			<h1> Please wait some time.... </h1> </div> ;
 
 		return (
 		<div className = "box">
       <div className = "innerBox">
-        <h1 className = "title">BOOKING INFORMATION</h1>
+        <h1 className = "title">Booking information</h1>
         <ul className = "list">
-        {
-          items.split(' ; ').map((item, i) =>(   
-          <li className= "listItem" key={i}>{item.charAt(0).toUpperCase() + item.slice(1)}
-          </li>
-         
-          ))
-        }
+        {items.split(' ; ').map((item, i) =>(   
+			<li className= "listItem" key={ i }>{ item.charAt(0).toUpperCase() + item.slice(1) } 
+			</li>
+			))}
         </ul>
         <button>Edit</button>
       </div>

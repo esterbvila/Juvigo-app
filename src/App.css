@@ -5,6 +5,7 @@
 }
 html{
   background:#f1f1f8;
+  background:#f1f1f8;
 }
 .box {
   max-width:600px;
@@ -30,11 +31,11 @@ html{
 .title{
   font-size:19px;
   margin-bottom:22px;
-  color:#0e1038;
+  color:#382e0e;
 }
 .list{
   font-family:'RobotoLight', sans-serif;
-  font-size:14px;
+  font-size:14.5px;
   margin:0;
   padding:0;
 }
@@ -46,24 +47,25 @@ html{
 }
                
 button {
-  background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%);;
   margin: 10px;
-  padding: 15px 30px;
+  padding: 12px 23px;
   text-align: center;
-  text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;            
   box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  border-radius: 20px;
   display:flex;
   justify-content:end;
   margin-left:auto;
   margin-right:0;
   border:none;
   font-weight:600;
-  font-size:13.5px;
+  font-size:14px;
+  cursor:pointer;
 }
+            
 
 button:hover {
   background-position: right center; /* change the direction of the change here */
@@ -73,7 +75,7 @@ button:hover {
 
 /* bookingID */
 .listItem:first-child{
-  font-size:13px;
+  font-size:13.5px;
   font-weight:600;
   font-family:'RobotoMedium', sans-serif;
   color:rgb(67 69 70 / 60%);
@@ -82,7 +84,7 @@ button:hover {
 
 /* date */
 .listItem:nth-child(2){
-  font-size:13px;
+  font-size:13.5px;
   font-weight:600;
   font-family:'RobotoMedium', sans-serif;
   color:rgb(67 69 70 / 60%);
@@ -96,6 +98,21 @@ button:hover {
   padding-top:16px;
 }
 
+/* phone */
+.listItem:nth-child(6){
+  color:#1c84e0;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* email */
+.listItem:nth-child(7){
+  color:#1c84e0;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+
 /* addr_land */
 .listItem:nth-child(11){
   border-bottom: 1px solid rgb(67 69 70 / 20%);
@@ -104,7 +121,7 @@ button:hover {
 
 /* tn_firstname  */
 .listItem:nth-child(12){
-  padding-top:10px;
+  padding-top:16px;
 }
 
 /* tn_birthday  */
@@ -115,13 +132,21 @@ button:hover {
 
 /* campid */
 .listItem:nth-child(16){
-  padding-top:10px;
+  padding-top:16px;
 }
 
 /* camp_url  */
 .listItem:nth-child(35){
   border-bottom: 1px solid rgb(67 69 70 / 20%);
   padding-bottom:16px;
+  color:#1c84e0;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* total price*/
+.listItem:nth-child(31){
+  color:rgb(255, 128, 0);
 }
 
 /* deleted */
@@ -129,8 +154,10 @@ button:hover {
   padding-top:10px;
 }
 
-
-
+/* review text */
+.listItem:nth-child(40){
+  font-style: italic;
+}
 
 
 
