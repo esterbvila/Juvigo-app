@@ -1,0 +1,137 @@
+@font-face {
+  font-family:'RobotoLight', sans-serif;
+  src: url(../src/Roboto/Roboto-Light.ttf);
+  font-display: swap;
+}
+html{
+  background:#f1f1f8;
+}
+.box {
+  max-width:600px;
+  margin:auto;
+  border:1px solid rgb(67 69 70 / 16%);
+  box-shadow:0px 4px 20px rgb(67 69 70 / 16%);
+  border-radius:10px;
+  padding:20px;
+  background:white;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.box::before{
+  content:"\2715";
+  font-size:18px;
+  display:flex;
+  justify-content:end;
+  opacity:0.8;
+}
+.innerBox{
+  padding:5px 40px 25px 40px;
+}
+.title{
+  font-size:19px;
+  margin-bottom:22px;
+  color:#0e1038;
+}
+.list{
+  font-family:'RobotoLight', sans-serif;
+  font-size:14px;
+  margin:0;
+  padding:0;
+}
+.listItem{
+  text-align:left;
+  list-style: none;
+  line-height:20px;
+  color:rgb(24, 25, 25);
+}
+               
+button {
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display:flex;
+  justify-content:end;
+  margin-left:auto;
+  margin-right:0;
+  border:none;
+  font-weight:600;
+  font-size:13.5px;
+}
+
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* bookingID */
+.listItem:first-child{
+  font-size:13px;
+  font-weight:600;
+  font-family:'RobotoMedium', sans-serif;
+  color:rgb(67 69 70 / 60%);
+  line-height:17px;
+}
+
+/* date */
+.listItem:nth-child(2){
+  font-size:13px;
+  font-weight:600;
+  font-family:'RobotoMedium', sans-serif;
+  color:rgb(67 69 70 / 60%);
+  border-bottom: 1px solid rgb(67 69 70 / 20%);
+  padding-bottom:16px;
+  line-height:17px;
+}
+
+/* parent_salutation */
+.listItem:nth-child(3){
+  padding-top:16px;
+}
+
+/* addr_land */
+.listItem:nth-child(11){
+  border-bottom: 1px solid rgb(67 69 70 / 20%);
+  padding-bottom:16px;
+}
+
+/* tn_firstname  */
+.listItem:nth-child(12){
+  padding-top:10px;
+}
+
+/* tn_birthday  */
+.listItem:nth-child(15){
+  border-bottom: 1px solid rgb(67 69 70 / 20%);
+  padding-bottom:16px;
+}
+
+/* campid */
+.listItem:nth-child(16){
+  padding-top:10px;
+}
+
+/* camp_url  */
+.listItem:nth-child(35){
+  border-bottom: 1px solid rgb(67 69 70 / 20%);
+  padding-bottom:16px;
+}
+
+/* deleted */
+.listItem:nth-child(36){
+  padding-top:10px;
+}
+
+
+
+
+
+
+
